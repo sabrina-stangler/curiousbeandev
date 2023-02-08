@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/curiousbeandev/static/css/main.073c9b0a.css",
+    "main.js": "/curiousbeandev/static/js/main.a42d7482.js",
+    "static/js/787.ab9168d6.chunk.js": "/curiousbeandev/static/js/787.ab9168d6.chunk.js",
+    "static/media/logo.svg": "/curiousbeandev/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/curiousbeandev/index.html",
+    "main.073c9b0a.css.map": "/curiousbeandev/static/css/main.073c9b0a.css.map",
+    "main.a42d7482.js.map": "/curiousbeandev/static/js/main.a42d7482.js.map",
+    "787.ab9168d6.chunk.js.map": "/curiousbeandev/static/js/787.ab9168d6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a42d7482.js"
+  ]
+}

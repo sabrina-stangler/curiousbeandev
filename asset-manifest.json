@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/curiousbeandev/static/css/main.b45f3b03.css",
-    "main.js": "/curiousbeandev/static/js/main.b8f84369.js",
-    "static/js/787.ab9168d6.chunk.js": "/curiousbeandev/static/js/787.ab9168d6.chunk.js",
-    "index.html": "/curiousbeandev/index.html",
-    "main.b45f3b03.css.map": "/curiousbeandev/static/css/main.b45f3b03.css.map",
-    "main.b8f84369.js.map": "/curiousbeandev/static/js/main.b8f84369.js.map",
-    "787.ab9168d6.chunk.js.map": "/curiousbeandev/static/js/787.ab9168d6.chunk.js.map"
+    "main.css": "/static/css/main.b45f3b03.css",
+    "main.js": "/static/js/main.aefbd94c.js",
+    "static/js/787.ab9168d6.chunk.js": "/static/js/787.ab9168d6.chunk.js",
+    "index.html": "/index.html",
+    "main.b45f3b03.css.map": "/static/css/main.b45f3b03.css.map",
+    "main.aefbd94c.js.map": "/static/js/main.aefbd94c.js.map",
+    "787.ab9168d6.chunk.js.map": "/static/js/787.ab9168d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b45f3b03.css",
-    "static/js/main.b8f84369.js"
+    "static/js/main.aefbd94c.js"
   ]
 }

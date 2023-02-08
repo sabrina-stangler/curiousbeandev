@@ -1,15 +1,6 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
-  "homepage": "https://sabrina-stangler.github.io/curiousbeandev",
-	"scripts": {
-		"start": "npm start",
-		"build": "npm build",
-		"predeploy": "yarn run build",
-		"deploy": "gh-pages -d build",
-		"test": "npm test",
-		"eject": "npm eject"
-  },
   "icons": [
     {
       "src": "favicon.ico",

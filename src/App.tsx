@@ -4,21 +4,29 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="app">
+      <div className="header">
+        <h1>
+          <span className="curious-bean">Curious Bean</span> Consulting
+        </h1>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Curious Bean is a consulting company owned & operated by yours truly, Sabrina Stangler. 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          I provide services in digital product development, from web & mobile development to product management to UI design, I'm your gal!
+        </p>
+      </div>
+      {/* <div className="content">
+        <div className="block">
+          Work Experience
+        </div>
+        <div>//todo</div>
+      </div> */}
+      <div className="footer">
+        <p>
+          <a className="email-link" href="mailto:sabstangler@gmail.com">Email me</a> if you'd like to work together.
+        </p>
+      </div>
     </div>
   );
 }

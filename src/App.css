@@ -17,12 +17,13 @@
 
 .curious-bean {
   color: indianred;
+  font-family: 'Unbounded';
 }
 .email-link {
   color: indianred;
 }
 
-h1 {
+.logo-container {
   padding: 1rem;
   background-color: lavender;
   border-radius: 1rem;;

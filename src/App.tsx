@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './assets/curiousbean-logo.svg';
+import { Logo } from './components';
 import './App.css';
 
 function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>
-          <span className="curious-bean">Curious Bean</span> Consulting
-        </h1>
+        <div className="logo-container">
+          <Logo />
+        </div>
         <p>
           Curious Bean is a consulting company owned & operated by yours truly, Sabrina Stangler. 
         </p>

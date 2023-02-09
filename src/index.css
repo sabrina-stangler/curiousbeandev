@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Unbounded";
+  src: local("Unbounded"),
+   url("./assets/fonts/Unbounded/Unbounded-VariableFont_wght.ttf") format("truetype");
+  /* font-weight: bold; */
+}

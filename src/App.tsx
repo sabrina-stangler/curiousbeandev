@@ -1,6 +1,6 @@
 import React from 'react';
-// import logo from './assets/curiousbean-logo.svg';
 import { Logo } from './components';
+import { Footer } from './components';
 import './App.css';
 
 function App() {
@@ -23,11 +23,7 @@ function App() {
         </div>
         <div>//todo</div>
       </div> */}
-      <div className="footer">
-        <p>
-          <a className="email-link" href="mailto:sabstangler@gmail.com">Email me</a> if you'd like to work together.
-        </p>
-      </div>
+      <Footer />
     </div>
   );
 }

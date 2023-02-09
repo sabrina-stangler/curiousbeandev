@@ -7,10 +7,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: steelblue;
   background-color:aliceblue;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   padding: 2rem;
 }

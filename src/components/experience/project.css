@@ -1,0 +1,39 @@
+.project-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .5rem;
+  text-align: left;
+  background-color: lavender;
+  border-radius: 2rem;
+  padding: 1.25rem 1rem;
+  min-width: fit-content;
+  max-width: 20vw;
+}
+
+.project-title {
+  font-family: 'Signika_Negative';
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background-color: steelblue;
+  border-radius: .5rem;
+  padding: .25rem;
+}
+
+.project-description {
+  text-overflow: wrap;
+}
+
+.project-bullets {
+
+}
+
+.project-bullets-ul {
+  padding-left: 1rem;
+  margin: 0px;
+}
+
+.project-attrs {
+
+}

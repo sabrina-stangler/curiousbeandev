@@ -1,9 +1,6 @@
 .experience-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  border: 1.5px solid lavender;
-  border-radius: 2rem;
   padding: 1rem;
 }
 
@@ -11,14 +8,33 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 1rem;
+  padding: 0 1rem;
   border-left: 2px solid indianred;
 }
 
-.year-container {
-}
 
 .year-label {
-  border-left: 1.5px solid steelblue;
   padding-left: .5rem;
+}
+
+.company-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+.company-label {
+  margin: 0px;
+  color: indianred;
+}
+
+.company-project-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  padding: .25rem;
+  width: 100%;
 }

@@ -1,33 +1,25 @@
-import { ProjectDetails } from './experience'
+import { Project } from '../../models'
 import './project.css'
 
-export enum ProjectAttr {
-  frontend = 'frontend',
-  backend = 'backend',
-  fullstack = 'fullstack',
-  react = 'react',
-  angular = 'angular',
-  ionic = 'ionic',
-  mobile = 'mobile',
-  product_management = 'product management',
-  team_lead = 'team lead',
-  ui_ux = 'ui/ux design'
-}
-
 export interface ProjectProps {
-  project: ProjectDetails
+  project: Project
 }
 
-export function Project({ project }: ProjectProps) {
+export function ProjectCard({ project }: ProjectProps) {
   const { title, description, bullets, attrs } = project
   return (
-    <div className="experience-container">
-      <h2>{title}</h2>
-      <h3>{description}</h3>
-      {bullets && bullets.length > 0 && <ul>
-        {bullets.map(b => <li>{b}</li>)}
-      </ul>}
-      {attrs.join(', ')}
+    <div className="project-container">
+      <span className="project-title">{title}</span>
+      <span className="project-description">{description}</span>
+      <div className="project-bullets">
+        {bullets && bullets.length > 0 &&
+          <ul className="project-bullets-ul">
+            {bullets.map(b => <li>{b}</li>)}
+          </ul>}
+      </div>
+      <div className="project-attrs">
+        {attrs.sort((a,b) => a.localeCompare(b)).join(', ')}
+      </div>
     </div>
   )
 }

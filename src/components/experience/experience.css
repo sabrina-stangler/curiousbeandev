@@ -1,0 +1,24 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1.5px solid lavender;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+  border-left: 2px solid indianred;
+}
+
+.year-container {
+}
+
+.year-label {
+  border-left: 1.5px solid steelblue;
+  padding-left: .5rem;
+}

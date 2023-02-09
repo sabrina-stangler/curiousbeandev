@@ -1,7 +1,5 @@
-import React from 'react';
-import { Logo } from './components';
-import { Footer } from './components';
 import './App.css';
+import { Experience, Footer, Logo } from './components';
 
 function App() {
   return (
@@ -17,12 +15,9 @@ function App() {
           I provide services in digital product development, from web & mobile development to product management to UI design, I'm your gal!
         </p>
       </div>
-      {/* <div className="content">
-        <div className="block">
-          Work Experience
-        </div>
-        <div>//todo</div>
-      </div> */}
+      <div className="content">
+        <Experience />
+      </div>
       <Footer />
     </div>
   );

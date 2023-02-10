@@ -76,10 +76,20 @@
    url("./assets/fonts/Asap/Asap-Italic-VariableFont_wdth,wght.ttf") format("truetype");
 }
 
+:root {
+  --primary: indianred;
+  --secondary: steelblue;
+  --light: aliceblue;
+  --medium: lavender;
+  --darkgrey: darkgrey;
+  --lightgrey: lightgrey;
+  --darkgrey: darkslategrey;
+}
+
 body {
   margin: 0;
   font-family: 'Asap-Light', sans-serif;
-  color: darkslategrey;
+  color: var(--darkgrey);
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
@@ -90,22 +100,22 @@ code {
 }
 
 h1 {
-  color: indianred;
+  color: var(--primary);
   font-size: min(12vw, 50px);
   font-family: 'Signika_Negative';
   font-weight: 600;
-  text-shadow: 1px 1px darkgrey;
+  text-shadow: 1px 1px var(--darkgrey);
 }
 
 h2 {
   font-family: 'Asap-SemiBold';
-  color: steelblue;
+  color: var(--secondary);
   font-size: min(10vw, 32px);
-  text-shadow: 1px 1.5px 1px lightgrey;
+  text-shadow: 1px 1.5px 1px var(--lightgrey);
 }
 
 h3 {
   font-family: 'Asap-Semibold';
-  color: steelblue;
+  color: var(--secondary);
   font-size: min(8vw, 24px);
 }

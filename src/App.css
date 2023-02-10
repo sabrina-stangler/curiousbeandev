@@ -5,23 +5,23 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color:aliceblue;
+  background-color:var(--light);
   text-align: center;
   font-weight: 600;
   padding: 2rem;
 }
 
 .curious-bean {
-  color: indianred;
+  color: var(--primary);
   font-family: 'Unbounded';
 }
 .email-link {
-  color: indianred;
+  color: var(--primary);
 }
 
 .logo-container {
   padding: 1rem;
-  background-color: lavender;
+  background-color: var(--medium);
   border-radius: 1rem;;
 }
 
@@ -30,12 +30,12 @@
 }
 
 .block {
-  color: indianred;
+  color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
   font-size: larger;
-  background-color: lavender;
+  background-color: var(--medium);
   height: fit-content;
   padding: 1rem;
   border-radius: 1rem;

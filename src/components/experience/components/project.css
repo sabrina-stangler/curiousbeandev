@@ -2,12 +2,12 @@
   display: flex;
   flex-flow: column nowrap;
   gap: .5rem;
-  background-color: lavender;
+  background-color: var(--medium);
   border-radius: 2rem;
   padding: 1.25rem;
   max-width: 400px;
   justify-content: space-between;
-  box-shadow: 2px 2px 2px -1px darkgrey;
+  box-shadow: 2px 2px 2px -1px var(--darkgrey);
 }
 
 .project-content {
@@ -24,7 +24,7 @@
   font-weight: 800;
   text-transform: capitalize;
   font-size: 18px;
-  color: steelblue;
+  color: var(--secondary);
 }
 
 .project-description {

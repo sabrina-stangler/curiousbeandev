@@ -1,5 +1,5 @@
 import './experience.css'
-import { ProjectCard } from './project'
+import { ProjectCard } from './components/project'
 import { organizations } from '../../constants'
 
 export function Experience() {

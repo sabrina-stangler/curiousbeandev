@@ -1,4 +1,4 @@
-import { Project } from '../../models'
+import { Project } from '../../../models'
 import './project.css'
 
 export interface ProjectProps {

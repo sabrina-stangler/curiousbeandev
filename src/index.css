@@ -94,12 +94,14 @@ h1 {
   font-size: min(12vw, 50px);
   font-family: 'Signika_Negative';
   font-weight: 600;
+  text-shadow: 1px 1px darkgrey;
 }
 
 h2 {
   font-family: 'Asap-SemiBold';
   color: steelblue;
   font-size: min(10vw, 32px);
+  text-shadow: 1px 1.5px 1px lightgrey;
 }
 
 h3 {

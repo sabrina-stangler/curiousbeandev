@@ -29,6 +29,6 @@ export interface Organization {
   titles: string[];
   description: string;
   startDate: Date;
-  endDate: Date;
+  endDate?: Date;
   projects: Project[];
 }

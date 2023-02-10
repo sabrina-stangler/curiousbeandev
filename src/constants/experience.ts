@@ -27,7 +27,7 @@ const ds_connect: Project = {
 const ds: Organization = {
   name: 'Direct Supply',
   titles: ['Software Engineer'],
-  description: 'Full-time, full stack software engineer, team of 4-8 engineers + 1 business analyst + 1 product manager',
+  description: 'Full-time, full stack development in team of 4-8 engineers + 1 business analyst + 1 product manager',
   startDate: new Date('2020-06-05'),
   endDate: new Date('2021-07-15'),
   projects: [ds_bluelabel, ds_connect]
@@ -94,14 +94,14 @@ const rc_website: Project = {
 
 const rc: Organization = {
   name: 'RokkinCat LLC',
-  titles: ['Senior Software Engineer', 'Frontend Engineer', 'Tech Lead'],
+  titles: ['Senior Frontend Software Engineer', 'Tech Lead'],
   description: 'Full-time, agency of 10 devs, working in small teams to bring product visions to life for startups & SMB’s building digital products for the first time',
   startDate: new Date('2021-07-19'),
   endDate: new Date('2022-12-31'),
   projects: [rc_lmi, rc_website, rc_velocity, rc_quadjobs, rc_lpi]
 }
 
-// RokkinCat --------------------------------------
+// MacGregor Partners --------------------------------------
 
 const mgp_tag: Project = {
   title: 'inventory management',
@@ -123,5 +123,26 @@ const mgp: Organization = {
   projects: [mgp_tag]
 }
 
-const unsorted_orgs: Organization[] = [ds, rc, mgp]
+// Curious Bean --------------------------------------
+
+const cb_placeholder: Project = {
+  title: 'Hire me!',
+  description: 'Currently seeking clients for 2023',
+  bullets: [
+    'bringing product visions to life',
+    'hybrid mobile development (with Ionic)',
+    'web development in react or angular'
+  ],
+  attrs: [ProjectAttr.fullstack, ProjectAttr.react, ProjectAttr.angular, ProjectAttr.mobile, ProjectAttr.product_management, ProjectAttr.ionic]
+}
+
+const cb: Organization = {
+  name: 'Curious Bean LLC',
+  titles: ['Software Engineer', 'Technical Product Manager'],
+  description: 'Self-employed consulting business',
+  startDate: new Date('2023-01-01'),
+  projects: [cb_placeholder]
+}
+
+const unsorted_orgs: Organization[] = [ds, rc, mgp, cb]
 export const organizations: Organization[] = unsorted_orgs.sort((a,b) => a.startDate.getTime() >= b.startDate.getTime() ? -1 : 1)

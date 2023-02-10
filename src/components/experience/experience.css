@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0 1rem;
-  border-left: 2px solid indianred;
+  border-left: 2px dashed steelblue;
 }
 
 
@@ -35,6 +35,5 @@
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
-  padding: .25rem;
   width: 100%;
 }

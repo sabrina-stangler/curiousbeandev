@@ -1,46 +1,41 @@
 .app {
   position: absolute;
   top: 0px;
-  bottom: 0px;
   left: 0px;
-  right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: steelblue;
-  background-color:aliceblue;
+  background-color:var(--light);
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   padding: 2rem;
 }
 
 .curious-bean {
-  color: indianred;
+  color: var(--primary);
+  font-family: 'Unbounded';
 }
 .email-link {
-  color: indianred;
+  color: var(--primary);
 }
 
-h1 {
+.logo-container {
   padding: 1rem;
-  background-color: lavender;
+  background-color: var(--medium);
   border-radius: 1rem;;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  
 }
 
 .block {
-  color: indianred;
+  color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
   font-size: larger;
-  background-color: lavender;
+  background-color: var(--medium);
   height: fit-content;
   padding: 1rem;
   border-radius: 1rem;

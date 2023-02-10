@@ -1,14 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import { Experience, Footer, Logo } from './components';
+import {Helmet} from 'react-helmet'
+
 import './App.css';
 
 function App() {
   return (
     <div className="app">
+      <Helmet>
+        <script src="https://kit.fontawesome.com/947016a734.js" crossOrigin="anonymous"></script>
+      </Helmet>
       <div className="header">
-        <h1>
-          <span className="curious-bean">Curious Bean</span> Consulting
-        </h1>
+        <div className="logo-container">
+          <Logo />
+        </div>
         <p>
           Curious Bean is a consulting company owned & operated by yours truly, Sabrina Stangler. 
         </p>
@@ -16,17 +20,10 @@ function App() {
           I provide services in digital product development, from web & mobile development to product management to UI design, I'm your gal!
         </p>
       </div>
-      {/* <div className="content">
-        <div className="block">
-          Work Experience
-        </div>
-        <div>//todo</div>
-      </div> */}
-      <div className="footer">
-        <p>
-          <a className="email-link" href="mailto:sabstangler@gmail.com">Email me</a> if you'd like to work together.
-        </p>
+      <div className="content">
+        <Experience />
       </div>
+      <Footer />
     </div>
   );
 }

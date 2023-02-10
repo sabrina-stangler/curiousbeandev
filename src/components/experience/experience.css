@@ -1,0 +1,39 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1rem;
+  border-left: 2px dashed var(--secondary);
+}
+
+
+.year-label {
+  padding-left: .5rem;
+}
+
+.company-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
+
+.company-label {
+  margin: 0px;
+  color: var(--primary);
+}
+
+.company-project-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  width: 100%;
+}

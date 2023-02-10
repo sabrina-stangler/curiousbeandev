@@ -2,10 +2,19 @@
   display: flex;
   flex-flow: column nowrap;
   gap: .5rem;
-  text-align: left;
   background-color: lavender;
   border-radius: 2rem;
-  padding: 1.25rem 1rem;
+  padding: 1.25rem;
+  max-width: 400px;
+  justify-content: space-between;
+}
+
+.project-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .5rem;
+  text-align: left;
+  border-radius: 2rem;
   max-width: 400px;
 }
 
@@ -33,7 +42,7 @@
 }
 
 .project-attrs {
-
+  align-self: flex-end;
 }
 
 .project-links {

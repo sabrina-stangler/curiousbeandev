@@ -86,6 +86,12 @@
   --darkgrey: darkslategrey;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--light);
+}
+
 body {
   margin: 0;
   font-family: 'Asap-Light', sans-serif;
@@ -118,4 +124,8 @@ h3 {
   font-family: 'Asap-Semibold';
   color: var(--secondary);
   font-size: min(8vw, 24px);
+}
+
+button {
+  font-family: 'Asap-Medium', sans-serif;
 }

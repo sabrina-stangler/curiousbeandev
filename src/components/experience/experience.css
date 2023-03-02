@@ -4,6 +4,24 @@
   padding: 1rem;
 }
 
+.experience-tabs {
+
+}
+
+.experience-tab {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  color: var(--secondary);
+  padding: .5rem 1rem;
+}
+
+.selected-experience-tab {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
 .timeline {
   display: flex;
   flex-direction: column;

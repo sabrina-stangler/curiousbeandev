@@ -1,11 +1,8 @@
 .app {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color:var(--light);
   text-align: center;
   font-weight: 600;
   padding: 2rem;

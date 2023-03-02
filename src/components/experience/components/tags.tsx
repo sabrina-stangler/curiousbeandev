@@ -11,6 +11,7 @@ export function ProjectTags({ tags }: ProjectTagsProps) {
   tags.sort((a,b) => a.localeCompare(b)).forEach(t => {
     let icon = <></>
     switch(t) {
+      // Product Tags
       case ProjectAttr.fullstack:
         icon = <i className="fa-solid fa-arrows-up-down"></i>
         break;
@@ -40,6 +41,25 @@ export function ProjectTags({ tags }: ProjectTagsProps) {
         break;
       case ProjectAttr.ui_ux:
         icon = <div className="tag-circle tag-purple"></div>
+        break;
+      case ProjectAttr.design:
+        icon = <div className="tag-circle tag-pink"></div>
+        break;
+      // Leadership Tags
+      case ProjectAttr.eboard:
+        icon = <div className="tag-circle tag-blue"></div>
+        break;
+      case ProjectAttr.top_dog:
+        icon = <div className="tag-circle tag-red"></div>
+        break;
+      case ProjectAttr.volunteer:
+        icon = <div className="tag-circle tag-green"></div>
+        break;
+      case ProjectAttr.promotion:
+        icon = <div className="tag-circle tag-purple"></div>
+        break;
+      case ProjectAttr.elected:
+        icon = <div className="tag-circle tag-aqua"></div>
         break;
       default: 
         icon = <div className="tag-circle tag-grey"></div>

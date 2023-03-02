@@ -8,6 +8,9 @@ export function Footer() {
       <p>
         <a className="email-link" href="mailto:sabstangler@gmail.com">Email me</a> if you'd like to work together.
       </p>
+      <p>
+        Check out the <a className="email-link" href="https://github.com/sabrina-stangler/curiousbeandev">github repo</a> for this website.
+      </p>
     </div>
   )
 }

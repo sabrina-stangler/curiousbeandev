@@ -1,4 +1,6 @@
+// Project Attributes
 export enum ProjectAttr {
+  // Product
   frontend = 'frontend',
   backend = 'backend',
   fullstack = 'fullstack',
@@ -8,7 +10,14 @@ export enum ProjectAttr {
   mobile = 'mobile',
   product_management = 'product management',
   team_lead = 'team lead',
-  ui_ux = 'ui/ux design'
+  ui_ux = 'ui/ux design',
+  design = 'design',
+  // Leadership
+  eboard = 'exec board',
+  top_dog = 'top dog',
+  elected = 'elected',
+  volunteer = 'volunteer',
+  promotion = 'promotion',
 }
 
 export interface ProjectLink {
@@ -26,7 +35,7 @@ export interface Project {
 
 export interface Organization {
   name: string;
-  titles: string[];
+  titles?: string[];
   description: string;
   startDate: Date;
   endDate?: Date;

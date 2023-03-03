@@ -123,6 +123,33 @@ const mgp: Organization = {
   projects: [mgp_tag]
 }
 
+// Cyberpunk Ventures --------------------------------------
+
+const cv_tipascrxipt: Project = {
+  title: 'Tip a ScRxipt',
+  description: 'startup product consulting',
+  bullets: [
+    'interpreted client vision into user stories, mockups, and pitch deck for investors',
+    'collaborated with fellow technical product managers (!! & !!!)',
+  ],
+  attrs: [ProjectAttr.product_management, ProjectAttr.design],
+  links: [
+    { label: 'pitch deck', href: 'https://drive.google.com/file/d/1PgbiZwU46LEYmUfYprW7vM-bv9t1PXAa/view?usp=sharing'},
+    { label: 'sam aten', href: 'https://www.linkedin.com/in/samuelaten/'},
+    { label: 'michael kirsanov', href: 'https://www.linkedin.com/in/michaelkirsanov/'},
+    { label: 'tipascrxipt', href: 'https://tipascrxipt.com/'},
+  ]
+}
+
+const cv: Organization = {
+  name: 'Cyberpunk Ventures LLC',
+  titles: ['Technical Product Manager'],
+  description: 'Group startup & product consulting business',
+  startDate: new Date('2019-06-01'),
+  endDate: new Date('2020-08-01'),
+  projects: [cv_tipascrxipt]
+}
+
 // Curious Bean --------------------------------------
 
 const cb_placeholder: Project = {
@@ -144,5 +171,5 @@ const cb: Organization = {
   projects: [cb_placeholder]
 }
 
-const unsorted_orgs: Organization[] = [ds, rc, mgp, cb]
-export const organizations: Organization[] = unsorted_orgs.sort((a,b) => a.startDate.getTime() >= b.startDate.getTime() ? -1 : 1)
+const unsorted_orgs: Organization[] = [ds, rc, mgp, cv, cb]
+export const productExperience: Organization[] = unsorted_orgs.sort((a,b) => a.startDate.getTime() >= b.startDate.getTime() ? -1 : 1)

@@ -58,6 +58,18 @@
   background-color: darkorchid;
 }
 
+.tag-pink {
+  background-color: fuchsia;
+}
+
+.tag-black {
+  background-color: black;
+}
+
+.tag-coral {
+  background-color: lightcoral;
+}
+
 .tag-grey {
   background-color: grey;
 }

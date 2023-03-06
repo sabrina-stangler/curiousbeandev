@@ -110,3 +110,7 @@ code {
 button {
   font-family: 'Asap-Medium', sans-serif;
 }
+
+a:link, a:visited, a:hover, a:active {
+  color: var(--dark);
+}

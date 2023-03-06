@@ -23,7 +23,6 @@
   width: 100%;
 }
 
-
 /* Small screen behavior */
 @media screen and (max-width: 600px) {
   .project-category-header {

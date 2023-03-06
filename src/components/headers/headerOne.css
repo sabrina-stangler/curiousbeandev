@@ -19,7 +19,7 @@
  content: '';
  position: absolute;
  top: 50%;
- border-bottom: 2px solid;
+ border-bottom: 2px solid var(--primary);
  width: 100vw;
  margin: 0 20px;
 }

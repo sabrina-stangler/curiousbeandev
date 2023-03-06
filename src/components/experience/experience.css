@@ -5,10 +5,10 @@
 }
 
 .experience-tabs {
-
 }
 
 .experience-tab {
+  font-size: 24px;
   background-color: transparent;
   border: 0px;
   border-radius: 10px;
@@ -18,8 +18,8 @@
 }
 
 .selected-experience-tab {
-  background-color: var(--secondary);
-  color: var(--light);
+  text-decoration-line: overline;
+  text-decoration-style: wavy;
 }
 
 .timeline {

@@ -11,8 +11,7 @@ export function ProjectCard({ project }: ProjectProps) {
   return (
     <div className="project-container">
       <div className="project-content">
-        <span className="project-title">{title}</span>
-        <span className="project-description">{description}</span>
+        <span className="project-title">{title}: {description}</span>
         <div className="project-bullets">
           {bullets && bullets.length > 0 &&
             <ul className="project-bullets-ul">

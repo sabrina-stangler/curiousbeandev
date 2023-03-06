@@ -22,9 +22,14 @@
   border-radius: 1rem;;
 }
 
+.content {
+  padding: 1rem 0;
+}
+
 @media screen and (min-width: 1800px) {
   .content {
-    padding: 0 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
 

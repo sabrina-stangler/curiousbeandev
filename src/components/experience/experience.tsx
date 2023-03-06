@@ -3,6 +3,7 @@ import { useState } from 'react'
 import productExperience from '../../constants/product-experience'
 import leadershipExperience from '../../constants/leadership-experience'
 import { ProjectCategory } from './components/project-category'
+import { HeaderOne } from '../headers'
 
 enum ExperienceTab {
   product = 'product',
@@ -16,7 +17,7 @@ export function Experience() {
 
   return (
     <div className="experience-container">
-      <h1>Experience</h1>
+      <HeaderOne text="Experience" />
       <div className="experience-tabs">
         {orderedTabs.map(t => (
           <button className={"experience-tab" + (currentTab === t ? " selected-experience-tab" : "")} onClick={() => setCurrentTab(t)}>{t}</button>

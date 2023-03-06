@@ -39,7 +39,7 @@ const msoe_uif: Project = {
 }
 
 const student_orgs: Organization = {
-  name: 'Student Organizations',
+  name: 'Student Orgs',
   description: 'In my student leadership, improve MSOE era',
   startDate: new Date('2016-09-01'),
   endDate: new Date('2020-05-25'),
@@ -135,4 +135,6 @@ const company_internal: Organization = {
   projects: [rc_lmi_teamlead, ds_fun_ambassador, mgp_intern_mentor]
 }
 
-export const leadershipExperience: Organization[] = [student_orgs, startups, company_internal]
+const leadershipExperience: Organization[] = [student_orgs, startups, company_internal]
+
+export default leadershipExperience

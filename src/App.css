@@ -22,8 +22,10 @@
   border-radius: 1rem;;
 }
 
-.content {
-  
+@media screen and (min-width: 1800px) {
+  .content {
+    padding: 0 10vw;
+  }
 }
 
 .block {

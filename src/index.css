@@ -79,11 +79,13 @@
 :root {
   --primary: indianred;
   --secondary: steelblue;
+  --white: white;
   --light: aliceblue;
   --medium: lavender;
   --lightgrey: lightgrey;
   --mediumgrey: darkgrey;
   --darkgrey: darkslategrey;
+  --dark: navy;
 }
 
 html, body {

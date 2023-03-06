@@ -14,8 +14,8 @@ const ds_bluelabel: Project = {
 }
 
 const ds_connect: Project = {
-  title: 'integrated greenfield',
-  description: 'new product serving new users, iframed into existing product',
+  title: 'New Product',
+  description: 'Launched MVP in 6wks',
   bullets: [
     'ideated new solution to fit timeline of 6wks',
     'stood up new product end to end in team of 6',
@@ -105,7 +105,7 @@ const rc: Organization = {
 
 const mgp_tag: Project = {
   title: 'inventory management',
-  description: 'new features & maintenance on one of 3 core product offerings',
+  description: 'new features & maintenance on core product offering',
   bullets: [
     'mentored by immediate team of 5',
     'mentored by full team of 12 including 3 architects',
@@ -153,7 +153,7 @@ const cv: Organization = {
 // Curious Bean --------------------------------------
 
 const cb_placeholder: Project = {
-  title: 'Hire me!',
+  title: 'Hire me',
   description: 'Currently seeking clients for 2023',
   bullets: [
     'bringing product visions to life',

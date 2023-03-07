@@ -23,7 +23,14 @@
 }
 
 .content {
-  
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 1800px) {
+  .content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 }
 
 .block {

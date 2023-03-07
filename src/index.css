@@ -79,11 +79,13 @@
 :root {
   --primary: indianred;
   --secondary: steelblue;
+  --white: white;
   --light: aliceblue;
   --medium: lavender;
   --lightgrey: lightgrey;
   --mediumgrey: darkgrey;
   --darkgrey: darkslategrey;
+  --dark: navy;
 }
 
 html, body {
@@ -105,27 +107,10 @@ code {
     monospace;
 }
 
-h1 {
-  color: var(--primary);
-  font-size: min(12vw, 50px);
-  font-family: 'Signika_Negative';
-  font-weight: 600;
-  text-shadow: 1px 1px var(--darkgrey);
-}
-
-h2 {
-  font-family: 'Asap-SemiBold';
-  color: var(--secondary);
-  font-size: min(10vw, 32px);
-  text-shadow: 1px 1.5px 1px var(--lightgrey);
-}
-
-h3 {
-  font-family: 'Asap-Semibold';
-  color: var(--secondary);
-  font-size: min(8vw, 24px);
-}
-
 button {
   font-family: 'Asap-Medium', sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: var(--dark);
 }

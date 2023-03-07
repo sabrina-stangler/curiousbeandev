@@ -5,10 +5,10 @@
 }
 
 .experience-tabs {
-
 }
 
 .experience-tab {
+  font-size: 24px;
   background-color: transparent;
   border: 0px;
   border-radius: 10px;
@@ -18,18 +18,27 @@
 }
 
 .selected-experience-tab {
-  background-color: var(--secondary);
-  color: var(--light);
+  text-decoration-line: overline;
+  text-decoration-style: wavy;
+}
+
+.expand-details-button {
+  font-family: 'Asap-Light';
+  padding-top: .5rem;
+  border: 0;
+  background-color: transparent;
+  color: var(--darkgrey);
 }
 
 .timeline {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0 1rem;
-  border-left: 2px dashed var(--secondary);
+  padding-top: 2rem;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .year-label {
   padding-left: .5rem;

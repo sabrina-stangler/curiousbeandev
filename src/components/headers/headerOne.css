@@ -1,6 +1,6 @@
 .h1 {
   color: var(--primary);
-  font-size: min(12vw, 48px);
+  font-size: min(10vw, 48px);
   font-family: 'Unbounded';
   font-weight: 600;
 }

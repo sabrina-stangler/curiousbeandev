@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { ExperienceContext } from '../../../contexts/useExperience'
 import { Project } from '../../../models'
 import './project.css'
 import { ProjectTags } from './tags'
@@ -8,17 +10,19 @@ export interface ProjectProps {
 
 export function ProjectCard({ project }: ProjectProps) {
   const { title, description, bullets, attrs, links } = project
+  const { showDetails } = useContext(ExperienceContext)
+  
   return (
     <div className="project-container">
       <div className="project-content">
         <span className="project-title">{title}: {description}</span>
-        <div className="project-bullets">
+        {showDetails && <div className="project-bullets">
           {bullets && bullets.length > 0 &&
             <ul className="project-bullets-ul">
               {bullets.map(b => <li>{b}</li>)}
             </ul>}
-        </div>
-        {links && <div className="project-links">
+        </div>}
+        {showDetails && links && <div className="project-links">
           {links.map((l, i) => {
             let index = ''
             for(let j = 0; j<=i; j++) {

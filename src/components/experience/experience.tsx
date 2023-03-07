@@ -1,9 +1,10 @@
 import './experience.css'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import productExperience from '../../constants/product-experience'
 import leadershipExperience from '../../constants/leadership-experience'
 import { ProjectCategory } from './components/project-category'
 import { HeaderOne } from '../headers'
+import { ExperienceContext } from '../../contexts/useExperience'
 
 enum ExperienceTab {
   product = 'product',
@@ -12,6 +13,7 @@ enum ExperienceTab {
 }
 
 export function Experience() {
+  const { showDetails, toggleDetails } = useContext(ExperienceContext)
   const orderedTabs = [ExperienceTab.product, ExperienceTab.leadership, ExperienceTab.speaking]
   const [currentTab, setCurrentTab] = useState<ExperienceTab>(ExperienceTab.product)
 
@@ -20,9 +22,20 @@ export function Experience() {
       <HeaderOne text="Experience" />
       <div className="experience-tabs">
         {orderedTabs.map(t => (
-          <button className={"experience-tab" + (currentTab === t ? " selected-experience-tab" : "")} onClick={() => setCurrentTab(t)}>{t}</button>
+          <button
+            className={"experience-tab" + (currentTab === t ? " selected-experience-tab" : "")}
+            onClick={() => setCurrentTab(t)}
+            >
+              {t}
+          </button>
         ))}
       </div>
+      <button
+        className="expand-details-button"
+        onClick={() => toggleDetails()}
+      >
+        {showDetails ? '- hide project details' : '+ expand project details'}
+      </button>
       {currentTab === ExperienceTab.product && 
         <div className="timeline">
           {productExperience.map(pe => <ProjectCategory category={pe} />)}

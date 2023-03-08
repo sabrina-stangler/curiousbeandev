@@ -1,9 +1,10 @@
-import { Experience, Footer, Logo } from './components';
+import { Experience, Footer, Logo, Profile } from './components';
 import {Helmet} from 'react-helmet'
 
 import './App.css';
 import { useCallback, useState } from 'react';
 import { ExperienceContext } from './contexts/useExperience';
+import { CB_TAGLINE } from './constants';
 
 function App() {
   const [showDetails, setShowDetails] = useState<boolean>(true)
@@ -22,14 +23,10 @@ function App() {
           <div className="logo-container">
             <Logo />
           </div>
-          <p>
-            Curious Bean is a consulting company owned & operated by yours truly, Sabrina Stangler. 
-          </p>
-          <p>
-            I provide services in digital product development, from web & mobile development to product management to UI design, I'm your gal!
-          </p>
+          {CB_TAGLINE.map(line => <p>{line}</p>)}
         </div>
         <div className="content">
+          <Profile />
           <Experience />
         </div>
         <Footer />

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6cc8821.css",
-    "main.js": "/static/js/main.259c6f83.js",
+    "main.css": "/static/css/main.a7ca6c57.css",
+    "main.js": "/static/js/main.1e19ae81.js",
     "static/js/787.ab9168d6.chunk.js": "/static/js/787.ab9168d6.chunk.js",
     "static/media/Unbounded-VariableFont_wght.ttf": "/static/media/Unbounded-VariableFont_wght.db84d8db427d8dff17c3.ttf",
     "static/media/Asap-Italic-VariableFont_wdth,wght.ttf": "/static/media/Asap-Italic-VariableFont_wdth,wght.3cdd1685ed9963f6380f.ttf",
@@ -16,14 +16,14 @@
     "static/media/Asap-Medium.ttf": "/static/media/Asap-Medium.44a3e151c687d843b8ec.ttf",
     "static/media/Asap-Black.ttf": "/static/media/Asap-Black.186a7a6fb03c4f49fcc2.ttf",
     "static/media/Asap-Bold.ttf": "/static/media/Asap-Bold.320e6895fd4b4d61185e.ttf",
-    "static/media/curiousbean-icon-color.svg": "/static/media/curiousbean-icon-color.17e360352299518708592032dc855d2f.svg",
+    "static/media/curiousbean-icon-color.svg": "/static/media/curiousbean-icon-color.4ab530d8456acf96f3f96eef393ca3e8.svg",
     "index.html": "/index.html",
-    "main.a6cc8821.css.map": "/static/css/main.a6cc8821.css.map",
-    "main.259c6f83.js.map": "/static/js/main.259c6f83.js.map",
+    "main.a7ca6c57.css.map": "/static/css/main.a7ca6c57.css.map",
+    "main.1e19ae81.js.map": "/static/js/main.1e19ae81.js.map",
     "787.ab9168d6.chunk.js.map": "/static/js/787.ab9168d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6cc8821.css",
-    "static/js/main.259c6f83.js"
+    "static/css/main.a7ca6c57.css",
+    "static/js/main.1e19ae81.js"
   ]
 }

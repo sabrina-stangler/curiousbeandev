@@ -23,7 +23,10 @@
 }
 
 .content {
-  padding: 1rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 3rem 0;
+  gap: 3rem;
 }
 
 @media screen and (min-width: 1800px) {

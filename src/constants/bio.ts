@@ -1,6 +1,6 @@
 export const CB_TAGLINE: string[] = [
   'Curious Bean is a ~digital product development~ company owned & operated by yours truly.',
-  'Services include: '
+  'Services include: web & mobile app development, product management, UI design, idea synthesis via whiteboard, etc.'
 ]
 
 export const NAME = 'Sabrina Stangler'

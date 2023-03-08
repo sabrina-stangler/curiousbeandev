@@ -14,11 +14,13 @@
   text-transform: capitalize;
   color: var(--secondary);
   padding: .5rem 1rem;
+  cursor: pointer;
 }
 
 .selected-experience-tab {
   text-decoration-line: overline;
   text-decoration-style: wavy;
+  text-decoration-color: var(--tertiary);
 }
 
 .expand-details-button {
@@ -26,7 +28,8 @@
   padding-top: .5rem;
   border: 0;
   background-color: transparent;
-  color: var(--darkgrey);
+  color: var(--dark);
+  cursor: pointer;
 }
 
 .timeline {

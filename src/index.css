@@ -76,16 +76,18 @@
    url("./assets/fonts/Asap/Asap-Italic-VariableFont_wdth,wght.ttf") format("truetype");
 }
 
+/* primary punch 2.1 */
 :root {
-  --primary: indianred;
-  --secondary: steelblue;
-  --white: white;
-  --light: aliceblue;
-  --medium: lavender;
-  --lightgrey: lightgrey;
-  --mediumgrey: darkgrey;
-  --darkgrey: darkslategrey;
-  --dark: navy;
+  --primary: #1b998b;
+  --secondary: #ff715b;
+  --tertiary: #bad7f2;
+  --white: #FEFEF9;
+  --light: #FEFEF9;
+  --medium: #f8f4a6;
+  --lightgrey: #D1E5F0;
+  --mediumgrey: #5EA4CC;
+  --darkgrey: #2B6587;
+  --dark: #153243;
 }
 
 html, body {
@@ -97,7 +99,7 @@ html, body {
 body {
   margin: 0;
   font-family: 'Asap-Light', sans-serif;
-  color: var(--darkgrey);
+  color: var(--dark);
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }
@@ -112,5 +114,5 @@ button {
 }
 
 a:link, a:visited, a:hover, a:active {
-  color: var(--dark);
+  color: var(--darkgrey);
 }

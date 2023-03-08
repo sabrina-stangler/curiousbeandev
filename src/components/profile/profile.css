@@ -39,16 +39,19 @@ but we'll limit the width on larger screens to keep it from wrapping  */
 .profile-name {
   font-family: 'Unbounded';
   color: var(--secondary);
-  font-size: min(6vw, 32px);
+  font-size: min(8vw, 36px);
 }
 
 .profile-tagline {
-  font-size: min(4vw, 24px);
+  font-size: min(6vw, 24px);
   color: var(--primary);
 }
 
 .profile-bio {
   text-overflow: wrap;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: .75rem;
 }
 
 .profile-gallery-photo-img {

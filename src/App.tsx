@@ -24,6 +24,9 @@ function App() {
             <Logo />
           </div>
           {CB_TAGLINE.map(line => <p>{line}</p>)}
+          <p>
+            <a className="email-link" href="mailto:sabstangler@gmail.com">Email me</a> if you'd like to work together!
+          </p>
         </div>
         <div className="content">
           <Profile />

@@ -135,6 +135,6 @@ const company_internal: Organization = {
   projects: [rc_lmi_teamlead, ds_fun_ambassador, mgp_intern_mentor]
 }
 
-const leadershipExperience: Organization[] = [student_orgs, startups, company_internal]
+const leadershipExperience: Organization[] = [company_internal, startups, student_orgs]
 
 export default leadershipExperience

@@ -109,7 +109,8 @@ const rc_lmi_teamlead: Project = {
   description: 'Tech Lead',
   bullets: [
     'led team of 2-5 engineers that changed frequently',
-    'worked hand-in-hand with PM to make decisions & refine the backlog',
+    'made feature and framework decisions',
+    'reprioritized the backlog alongside the PM to keep the porject on time for launch',
     'previous team lead took leave of absence, I started performing tech lead responsibilities, then was promoted to the position officially after 2 months',
     'navigated new team dynamic with former team lead returning to project while I maintained tech lead responsibility'
   ],

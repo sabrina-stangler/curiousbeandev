@@ -40,7 +40,7 @@ const rc_velocity: Project = {
   description: 'startup product in feature churn',
   bullets: [
     'integrated radio station controlled by coach, available to up to 50 participants',
-    'made a couple quick changes in elixir backend'
+    'learned elixir in order to make backend changes'
   ],
   attrs: [ProjectAttr.frontend, ProjectAttr.react, ProjectAttr.ionic]
 }
@@ -61,7 +61,8 @@ const rc_lmi: Project = {
   description: 'SMB product building MVP for launch',
   bullets: [
     'led team of 2-5 engineers that changed frequently',
-    'worked hand-in-hand with PM to make decisions & refine the backlog',
+    'made feature and framework decisions',
+    'reprioritized the backlog alongside the PM to keep the porject on time for launch',
     'our client launched with customers on Dec 23 with NO issues (cue shock)',
     'finally felt like I had a grip on elixir after this project',
   ],

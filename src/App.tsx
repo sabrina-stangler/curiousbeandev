@@ -3,9 +3,10 @@ import {Helmet} from 'react-helmet'
 import './App.css';
 import { useCallback, useState } from 'react';
 import { ExperienceContext } from './contexts/useExperience';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home/home';
 import { RadioMilwaukee } from './pages/clients/RadioMilwaukee/RadioMilwaukee';
+import { Clients } from './pages/clients/clients';
 
 function App() {
   const [showDetails, setShowDetails] = useState<boolean>(true)
@@ -15,17 +16,16 @@ function App() {
   }, [])
 
   return (
-    <Router>
+    <ExperienceContext.Provider value={{showDetails, toggleDetails}} >
       <Helmet>
         <script src="https://kit.fontawesome.com/947016a734.js" crossOrigin="anonymous"></script>
       </Helmet>
-      <ExperienceContext.Provider value={{showDetails, toggleDetails}} >
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/radio-milwaukee" element={<RadioMilwaukee />} />
-        </Routes>
-      </ExperienceContext.Provider>
-    </Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/clients" element={<Clients />} />
+        <Route path="/clients/radio-milwaukee" element={<RadioMilwaukee />} />
+      </Routes>
+    </ExperienceContext.Provider>
   );
 }
 

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b257bf1a.css",
-    "main.js": "/static/js/main.d980d94d.js",
+    "main.css": "/static/css/main.79abd537.css",
+    "main.js": "/static/js/main.c27a828e.js",
     "static/js/787.ab9168d6.chunk.js": "/static/js/787.ab9168d6.chunk.js",
     "static/media/costume-rbg.jpg": "/static/media/costume-rbg.9dc34d903c3b00a45b3c.jpg",
     "static/media/selfie-purple-head-square.jpg": "/static/media/selfie-purple-head-square.6d810b701f6870ca8608.jpg",
@@ -22,12 +22,12 @@
     "static/media/Asap-Bold.ttf": "/static/media/Asap-Bold.320e6895fd4b4d61185e.ttf",
     "static/media/curiousbean-icon-color.svg": "/static/media/curiousbean-icon-color.4ab530d8456acf96f3f96eef393ca3e8.svg",
     "index.html": "/index.html",
-    "main.b257bf1a.css.map": "/static/css/main.b257bf1a.css.map",
-    "main.d980d94d.js.map": "/static/js/main.d980d94d.js.map",
+    "main.79abd537.css.map": "/static/css/main.79abd537.css.map",
+    "main.c27a828e.js.map": "/static/js/main.c27a828e.js.map",
     "787.ab9168d6.chunk.js.map": "/static/js/787.ab9168d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b257bf1a.css",
-    "static/js/main.d980d94d.js"
+    "static/css/main.79abd537.css",
+    "static/js/main.c27a828e.js"
   ]
 }

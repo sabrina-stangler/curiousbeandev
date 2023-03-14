@@ -16,13 +16,11 @@ const NOTE_FONTS: JSX.Element[] = [
   <p>This means that once the {'<iframe>'} is dropped into its respective website, it will already know how to grab the font-faces <em>if they're present</em>, and I am willing to bet they are.</p>,
   <p>Because of this, it's necessary to have slightly different custom stylesheets for each website in the Spinitron admin web customization, where each knows about its expected font family.</p>,
   <p>For example, the WYMS stylesheet includes:</p>,
-  <code>@font-face {'{'} font-family: "Roboto", sans-serif; {'}'}</code>,
-  <br />,
-  <code> body.public {'{'} font-family: "Roboto", sans-serif; {'}'}</code>,
+  <p className="rm-font-roboto">@font-face {'{'} font-family: "Roboto", sans-serif; {'}'}</p>,
+  <p className="rm-font-roboto-condensed">@font-face {'{'} font-family: "Roboto Condensed", sans-serif; {'}'}</p>,
   <p>Whereas the HYFIN stylesheet includes:</p>,
-  <code>@font-face {'{'} font-family: "Syne", sans-serif; {'}'}</code>,
-  <br />,
-  <code> body.public {'{'} font-family: "Syne", sans-serif; {'}'}</code>,
+  <p className="rm-font-syne">@font-face {'{'} font-family: "Syne", sans-serif; {'}'}</p>,
+  <p className="rm-font-archivo-black">@font-face {'{'} font-family: "Archivo Black", sans-serif; {'}'}</p>,
 ]
 
 const MORE_TIME: JSX.Element[] = [

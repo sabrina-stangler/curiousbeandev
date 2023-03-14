@@ -4,7 +4,8 @@ import { Footer } from '../footer'
 import './page-container.css'
 
 interface PageContainerProps {
-  children: React.ReactElement
+  // children: React.ReactElement
+  children: any // is this allowed????
 }
 
 export function PageContainer({children}: PageContainerProps) {

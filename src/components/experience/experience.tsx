@@ -19,7 +19,7 @@ export function Experience() {
 
   return (
     <div className="experience-container">
-      <HeaderOne text="Experience" />
+      <HeaderOne>Experience</HeaderOne>
       <div className="experience-tabs">
         {orderedTabs.map(t => (
           <button

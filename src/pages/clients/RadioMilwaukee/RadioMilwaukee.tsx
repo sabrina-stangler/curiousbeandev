@@ -1,5 +1,4 @@
-import { PageContainer } from '../../../components'
-import { HeaderOne } from '../../../components/headers'
+import { HeaderOne, Title, PageContainer } from '../../../components'
 import './RadioMilwaukee.css'
 
 const README: JSX.Element[] = [
@@ -34,18 +33,19 @@ const MORE_TIME: JSX.Element[] = [
 
 export function RadioMilwaukee() {
   return (
-    <PageContainer >
+    <PageContainer>
       <div>
-        <HeaderOne text="README" />
+        <Title>Radio Milwaukee</Title>
+        <HeaderOne>README</HeaderOne>
         <div className="rm-section-container">
           {README.map(line => line)}
         </div>
-        <HeaderOne text="A note about fonts" />
+        <HeaderOne>A note about fonts</HeaderOne>
         <div className="rm-section-container">
           {NOTE_FONTS.map(line => line)}
         </div>
         
-        <HeaderOne text="WYMS iframes" />
+        <HeaderOne>WYMS iframes</HeaderOne>
         <div className="rm-section-container">
           <h2 className="rm-iframe-header">Current Playlist</h2>
           <code>{'<div style={{"height": 750px}}><iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-playlist" src="//widgets.spinitron.com/widget/current-playlist?station=wyms"></iframe></div>'}</code>
@@ -73,7 +73,7 @@ export function RadioMilwaukee() {
           </div>
         </div>
 
-        <HeaderOne text="HYFIN iframes" />
+        <HeaderOne>HYFIN iframes</HeaderOne>
         <div className="rm-section-container">
           <h2 className="rm-iframe-header">Current Playlist</h2>
           <code>{'<div style={{"height": 750px}}><iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-playlist" src="//widgets.spinitron.com/widget/current-playlist?station=hyfin"></iframe></div>'}</code>
@@ -99,7 +99,7 @@ export function RadioMilwaukee() {
           </div>
         </div>
 
-        <HeaderOne text="Given more time..." />
+        <HeaderOne>Given more time...</HeaderOne>
         <div className="rm-section-container">
           {MORE_TIME.map(line => line)}
         </div>

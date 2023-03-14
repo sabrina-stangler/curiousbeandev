@@ -18,9 +18,9 @@ const NOTE_FONTS: JSX.Element[] = [
   <br />,
   <code> body.public {'{'} font-family: "Roboto", sans-serif; {'}'}</code>,
   <p>Whereas the HYFIN stylesheet has:</p>,
-  <code>@font-face {'{'} font-family: "Roboto", sans-serif; {'}'}</code>,
+  <code>@font-face {'{'} font-family: "Syne", sans-serif; {'}'}</code>,
   <br />,
-  <code> body.public {'{'} font-family: "Roboto", sans-serif; {'}'}</code>,
+  <code> body.public {'{'} font-family: "Syne", sans-serif; {'}'}</code>,
 ]
 
 export function RadioMilwaukee() {
@@ -36,7 +36,7 @@ export function RadioMilwaukee() {
           {NOTE_FONTS.map(line => line)}
         </div>
         
-        <HeaderOne text="Spinitron iframes" />
+        <HeaderOne text="WYMS iframes" />
         <div className="rm-section-container">
           <h2 className="rm-iframe-header">Current Playlist</h2>
           <code>{'<div style={{"height": 750px}}><iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-playlist" src="//widgets.spinitron.com/widget/current-playlist?station=wyms"></iframe></div>'}</code>
@@ -57,8 +57,36 @@ export function RadioMilwaukee() {
 
           <h2 className="rm-iframe-header">Now Playing</h2>
           <code>{'<iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-now-playing" src="//widgets.spinitron.com/widget/now-playing-v2?station=wyms&num=5&sharing=1&cover=1&player=1&merch=1" allow="encrypted-media"></iframe>'}</code>
+          <p>1) I don't know why this includes social links but the current playlist does not. They are simply ~not there~ when I inspect the page elements.</p>
+          <p>2) I don't know why the iframe for "Now Playing" is scrollable while the javascript widget currently on radiomilwaukee.org only shows the 1 song.</p>
           <div className="rm-iframe-container">
             <iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-now-playing" src="//widgets.spinitron.com/widget/now-playing-v2?station=wyms&num=5&sharing=1&cover=1&player=1&merch=1" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+
+        <HeaderOne text="HYFIN iframes" />
+        <div className="rm-section-container">
+          <h2 className="rm-iframe-header">Current Playlist</h2>
+          <code>{'<div style={{"height": 750px}}><iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-playlist" src="//widgets.spinitron.com/widget/current-playlist?station=hyfin"></iframe></div>'}</code>
+          <p>This {'<iframe>'} is also sitting in a container with its height set to 750px for ease of viewing. The {'<iframe>'} beneath is NOT in a conatiner, and thus is only filling up its "allowed height", which is small.</p>
+          <div style={{"height": "750px"}} className="rm-iframe-container">
+            <iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-playlist" src="//widgets.spinitron.com/widget/current-playlist?station=hyfin"></iframe>
+          </div>
+
+          <hr />
+
+          <h2 className="rm-iframe-header">Current Playlist (no height container)</h2>
+          <code>{'<iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-playlist" src="//widgets.spinitron.com/widget/current-playlist?station=hyfin"></iframe>'}</code>
+          <div className="rm-iframe-container">
+            <iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-playlist" src="//widgets.spinitron.com/widget/current-playlist?station=hyfin"></iframe>
+          </div>
+          
+          <hr />
+
+          <h2 className="rm-iframe-header">Now Playing</h2>
+          <code>{'<iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-now-playing" src="//widgets.spinitron.com/widget/now-playing-v2?station=hyfin&num=5&sharing=1&cover=1&player=1&merch=1" allow="encrypted-media"></iframe>'}</code>
+          <div className="rm-iframe-container">
+            <iframe height="100%" width="100%" style={{"border": "none"}} title="wyms-now-playing" src="//widgets.spinitron.com/widget/now-playing-v2?station=hyfin&num=5&sharing=1&cover=1&player=1&merch=1" allow="encrypted-media"></iframe>
           </div>
         </div>
       </div>

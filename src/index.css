@@ -88,6 +88,17 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Archivo Black", sans-serif;
+  src: url("./assets/fonts/Archivo_Black/ArchivoBlack-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Syne", sans-serif;
+  src: url("./assets/fonts/Syne/Syne-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+
 /* primary punch 2.1 */
 :root {
   --primary: #1b998b;

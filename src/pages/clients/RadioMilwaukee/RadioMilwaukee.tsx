@@ -2,6 +2,9 @@ import { HeaderOne, Title, PageContainer } from '../../../components'
 import './RadioMilwaukee.css'
 
 const README: JSX.Element[] = [
+  <p>This public page displays the resulting iframes & some supplementary notes for the Radio Milwaukee Spinitron iframe CSS spruce up.</p>,
+  <p>Other assets for this work including a copy of the stylesheet for each website and screenshots can be found <a href="https://drive.google.com/file/d/1WR6EPDy895OvJOFq3tm6Q4ZTKImjDUlI/view?usp=sharing" target="_blank" rel="noreferrer">here.</a></p>,
+  <p>-</p>,
   <p>Each playlist view has its own {'<iframe>'} tag, which can receive its own styling for things like height, width, border, etc.</p>,
   <p>Height, width, & border are attributes that cannot be controlled from within the {'<iframe>'}, that is, they cannot be controlled from entering any CSS rules in the Spinitron Admin "Web Customization Stylesheet"</p>,
   <p>Each radiomilwaukee.org & hyfin.org will <strong>need to include</strong> some <em>minimal styling</em> on the {'<iframe>'} tag that is dropped in, namely the following</p>,

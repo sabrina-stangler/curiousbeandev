@@ -1,14 +1,13 @@
-
-  @media screen and (min-width: 900px) {
-    .rm-section-container {
-      padding: 0 8rem;
-    }
+@media screen and (min-width: 900px) {
+  .rm-section-container {
+    padding: 0 8rem;
   }
-  @media screen and (max-width: 900px) {
-    .rm-section-container {
-      padding: 0 2rem;
-    }
+}
+@media screen and (max-width: 900px) {
+  .rm-section-container {
+    padding: 0 2rem;
   }
+}
 
 .rm-iframe-container {
   margin: 3rem 0;

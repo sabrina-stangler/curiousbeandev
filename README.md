@@ -44,3 +44,17 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+# Deploying
+
+1. Merge a PR into main
+1. Pull main down locally
+1. Run `npm run deploy` in terminal in root folder
+    * Note that a new pipeline will run under the 'Actions' tab in Github
+1. Navigate to curiousbeandev repo settings, under '[Pages](https://github.com/sabrina-stangler/curiousbeandev/settings/pages)' in the lhs
+    * Note that the website will show being deployed to the old github URL `https://sabrina-stangler.github.io/curiousbeandev/`
+1. Enter the custom domain again: `curiousbean.dev` & press 'Save'
+    * If "Enforce HTTPS" is not checked, check it.
+    * Note that a new pipeline will run under the 'Actions' tab in Github (again)
+
+FIN: This should successfully deploy the changes to `curiousbean.dev`

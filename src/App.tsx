@@ -19,6 +19,12 @@ function App() {
     <ExperienceContext.Provider value={{showDetails, toggleDetails}} >
       <Helmet>
         <script src="https://kit.fontawesome.com/947016a734.js" crossOrigin="anonymous"></script>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+        </style>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Syne&display=swap');
+        </style>
       </Helmet>
       <Routes>
         <Route path="/" element={<Home />} />

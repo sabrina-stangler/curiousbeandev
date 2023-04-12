@@ -12,15 +12,16 @@ const README: JSX.Element[] = [
 ]
 
 const NOTE_FONTS: JSX.Element[] = [
-  <p>I attempted to replicate the "font environments" from the radiomilwaukee.org and hyfin.org websites by downloading each of the fonts and including them on my website as a @font-face.</p>,
-  <p>This means that once the {'<iframe>'} is dropped into its respective website, it will already know how to grab the font-faces <em>if they're present</em>, and I am willing to bet they are.</p>,
-  <p>Because of this, it's necessary to have slightly different custom stylesheets for each website in the Spinitron admin web customization, where each knows about its expected font family.</p>,
+  <p>The custom CSS in Spinitron includes specific font & color declarations for each website.</p>,
+  <p>This means that once the {'<iframe>'} is dropped into its respective website, it will grab the fonts that are already cached in the browser from the parent website.</p>,
+  <p>This requires us to have slightly different custom stylesheets for each website in the Spinitron admin web customization, where each knows about its expected font family & color scheme.</p>,
   <p>For example, the WYMS stylesheet includes:</p>,
   <p className="rm-font-roboto">@font-face {'{'} font-family: "Roboto", sans-serif; {'}'}</p>,
   <p className="rm-font-roboto-condensed">@font-face {'{'} font-family: "Roboto Condensed", sans-serif; {'}'}</p>,
   <p>Whereas the HYFIN stylesheet includes:</p>,
   <p className="rm-font-syne">@font-face {'{'} font-family: "Syne", sans-serif; {'}'}</p>,
   <p className="rm-font-archivo-black">@font-face {'{'} font-family: "Archivo Black", sans-serif; {'}'}</p>,
+  <p>NOTE!! I was able to get the iframe to grab the fonts by declaring the font-faces in the Spinitron Web Customization CSS exactly as they appear in the browser's cache, so this might be fragile. I assumed this is a risk worth taking.</p>
 ]
 
 const MORE_TIME: JSX.Element[] = [

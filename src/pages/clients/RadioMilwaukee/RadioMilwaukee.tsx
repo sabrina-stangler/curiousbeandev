@@ -12,8 +12,7 @@ const README: JSX.Element[] = [
 ]
 
 const NOTE_FONTS: JSX.Element[] = [
-  <p>TL,DR: Fonts aren't working as expected.</p>,
-  <p>I replicated the "font environment" from the radiomilwaukee.org and hyfin.org websites by importing each of the fonts through fonts.google.com.</p>,
+  <p>The custom CSS in Spinitron includes specific font & color declarations for each website.</p>,
   <p>This means that once the {'<iframe>'} is dropped into its respective website, it will grab the fonts that are already cached in the browser from the parent website.</p>,
   <p>This requires us to have slightly different custom stylesheets for each website in the Spinitron admin web customization, where each knows about its expected font family & color scheme.</p>,
   <p>For example, the WYMS stylesheet includes:</p>,

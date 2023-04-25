@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcuriousbeandev=self.webpackChunkcuriousbeandev||[]).push([[499],{210:function(e,c,s){e.exports=s.p+"static/media/welcome.acf846bad8ed7c5ee436.md"}}]);

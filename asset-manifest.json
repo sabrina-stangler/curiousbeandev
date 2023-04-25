@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.5be524c5.css",
-    "main.js": "/static/js/main.916a9fe2.js",
+    "main.css": "/static/css/main.eded8db2.css",
+    "main.js": "/static/js/main.fb457ecf.js",
+    "static/js/972.6e69f923.chunk.js": "/static/js/972.6e69f923.chunk.js",
+    "static/js/499.43c49892.chunk.js": "/static/js/499.43c49892.chunk.js",
     "static/js/787.ab9168d6.chunk.js": "/static/js/787.ab9168d6.chunk.js",
     "static/media/costume-rbg.jpg": "/static/media/costume-rbg.9dc34d903c3b00a45b3c.jpg",
     "static/media/selfie-purple-head-square.jpg": "/static/media/selfie-purple-head-square.6d810b701f6870ca8608.jpg",
@@ -21,13 +23,15 @@
     "static/media/Asap-Black.ttf": "/static/media/Asap-Black.186a7a6fb03c4f49fcc2.ttf",
     "static/media/Asap-Bold.ttf": "/static/media/Asap-Bold.320e6895fd4b4d61185e.ttf",
     "static/media/curiousbean-icon-color.svg": "/static/media/curiousbean-icon-color.4ab530d8456acf96f3f96eef393ca3e8.svg",
+    "static/media/blog-setup.md": "/static/media/blog-setup.7c93adcf21a04bbe03e5.md",
+    "static/media/welcome.md": "/static/media/welcome.acf846bad8ed7c5ee436.md",
     "index.html": "/index.html",
-    "main.5be524c5.css.map": "/static/css/main.5be524c5.css.map",
-    "main.916a9fe2.js.map": "/static/js/main.916a9fe2.js.map",
+    "main.eded8db2.css.map": "/static/css/main.eded8db2.css.map",
+    "main.fb457ecf.js.map": "/static/js/main.fb457ecf.js.map",
     "787.ab9168d6.chunk.js.map": "/static/js/787.ab9168d6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5be524c5.css",
-    "static/js/main.916a9fe2.js"
+    "static/css/main.eded8db2.css",
+    "static/js/main.fb457ecf.js"
   ]
 }

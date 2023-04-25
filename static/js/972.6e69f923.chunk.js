@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcuriousbeandev=self.webpackChunkcuriousbeandev||[]).push([[972],{499:function(e,s,u){e.exports=u.p+"static/media/blog-setup.7c93adcf21a04bbe03e5.md"}}]);

@@ -7,6 +7,8 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home/home';
 import { RadioMilwaukee } from './pages/clients/RadioMilwaukee/RadioMilwaukee';
 import { Clients } from './pages/clients/clients';
+import { BlogBrowse } from './pages/blog';
+import { BlogPage } from './pages/blog/BlogPage';
 
 function App() {
   const [showDetails, setShowDetails] = useState<boolean>(true)
@@ -22,6 +24,8 @@ function App() {
       </Helmet>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<BlogBrowse />} />
+        <Route path="/blog/:fileName" element={<BlogPage />} />
         <Route path="/clients" element={<Clients />} />
         <Route path="/clients/radio-milwaukee" element={<RadioMilwaukee />} />
       </Routes>

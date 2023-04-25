@@ -16,6 +16,7 @@ export function PageContainer({children}: PageContainerProps) {
         <img src={Icon} alt="curiousbean-icon" height="40vh" />
         <Link className="nav-link" to="/">Home</Link>
         <Link className="nav-link" to="/clients">Clients</Link>
+        <Link className="nav-link" to="/blog">Blog</Link>
       </div>
       {children}
       <Footer />

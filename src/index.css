@@ -114,5 +114,7 @@ button {
 }
 
 a:link, a:visited, a:hover, a:active {
+  font-family: 'Asap-Medium';
   color: var(--darkgrey);
+  text-decoration-color: var(--tertiary);  
 }

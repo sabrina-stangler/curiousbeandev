@@ -2,11 +2,15 @@
   text-align: center;
   padding: 1rem;
   background-color: var(--medium);
-  border-radius: 1rem;;
+  border-radius: 1rem;
 }
 
 .title {
   font-family: 'Unbounded';
-  font-size: min(10vw, 72px);
+  font-size: min(6vi, 72px);
   color: var(--primary);
+}
+
+.title-container-tertiary {
+  background-color: var(--tertiary);
 }

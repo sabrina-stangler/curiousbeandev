@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
-import { PageContainer, Title } from "../../components";
-import { blogPosts } from "../../constants";
+import { Link } from "react-router-dom"
+import { PageContainer, Title } from "../../components"
+import { blogPosts } from "../../constants"
+
 import './BlogBrowse.css'
 
 export function BlogBrowse() {

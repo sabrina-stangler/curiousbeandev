@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
-import { HeaderOne, PageContainer, Subtitle, Title } from "../../components"
-import { blogPosts } from "../../constants"
 import { markdownToReact } from "simple-markdown"
+import { PageContainer, Subtitle, Title } from "../../components"
+import { blogPosts } from "../../constants"
 import { BlogPost } from "../../models"
 
 import './BlogPage.css'
@@ -16,7 +16,7 @@ export function BlogPage() {
   useEffect(() => {
     if (fileName && fileName.length > 0) {
       // * Grab post metadata
-      setMetadata(blogPosts.find(bp => bp.fileName = fileName))
+      setMetadata(blogPosts.find(bp => bp.fileName === fileName))
 
       // * Import file
       import(`../../constants/blog-posts/${fileName}.md`)

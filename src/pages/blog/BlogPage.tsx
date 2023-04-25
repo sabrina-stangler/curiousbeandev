@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
-import { PageContainer } from "../../components"
+import { HeaderOne, PageContainer, Subtitle, Title } from "../../components"
 import { blogPosts } from "../../constants"
 import { markdownToReact } from "simple-markdown"
 import { BlogPost } from "../../models"
@@ -40,11 +40,14 @@ export function BlogPage() {
     <PageContainer>
       <div className="blog-page-container">
         { metadata &&
-          <div>
-            <h1>{metadata.title}</h1>
-            <h2>{metadata.date.toLocaleDateString()}</h2>
+          <div className="blog-page-title-container">
+            <Title nestedPage><span className="blog-page-title">{metadata.title}</span></Title>
+            <Subtitle>Published {metadata.date.toLocaleDateString(undefined, { month: 'long', day: '2-digit', year: 'numeric' })}</Subtitle>
           </div>}
-        { parsedMarkdown !== undefined && parsedMarkdown}
+        { parsedMarkdown !== undefined && 
+          <div className="blog-page-content-container">
+            {parsedMarkdown}
+          </div>}
         { parsedMarkdown === undefined && <p>Failed to load post</p>}
       </div>
     </PageContainer>

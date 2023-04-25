@@ -2,8 +2,8 @@ import { BlogPost } from '../../models'
 
 const allBlogPosts: BlogPost[] = [
   {
-    title: 'test post',
-    date: new Date('04-25-2023'),
+    title: 'Welcome',
+    date: new Date('04-24-2023'),
     fileName: 'welcome',
   },
   {

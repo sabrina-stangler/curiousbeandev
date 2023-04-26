@@ -1,10 +1,10 @@
 import './profile.css'
-import CaliStuntin from '../../assets/images/me/cali-stuntin-cropped.jpg'
+// import CaliStuntin from '../../assets/images/me/cali-stuntin-cropped.jpg'
 import RBG from '../../assets/images/me/costume-rbg.jpg'
 import Graduation from '../../assets/images/me/me-collin-graduation.jpg'
 import SelfiePurple from '../../assets/images/me/selfie-purple-head-square.jpg'
 import SXSWTrio from '../../assets/images/me/sxsw-trio.jpg'
-import SelfieLolla from '../../assets/images/me/selfie-lolla-blue.jpg'
+// import SelfieLolla from '../../assets/images/me/selfie-lolla-blue.jpg'
 import { NAME, BIO_PARAGRAPHS } from '../../constants'
 
 export function Profile() {

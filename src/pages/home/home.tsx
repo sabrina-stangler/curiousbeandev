@@ -14,8 +14,7 @@ export function Home() {
         </p>
       </div>
       <div className="content">
-        <Profile />
-        <Experience />
+        
       </div>
     </PageContainer>
   )

@@ -17,6 +17,7 @@ export function PageContainer({children}: PageContainerProps) {
         <Link className="nav-link" to="/">Home</Link>
         <Link className="nav-link" to="/clients">Clients</Link>
         <Link className="nav-link" to="/blog">Blog</Link>
+        <Link className="nav-link" to="/about">About</Link>
       </div>
       {children}
       <Footer />

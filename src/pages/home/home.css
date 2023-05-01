@@ -10,7 +10,7 @@
 .content {
   display: flex;
   flex-flow: column nowrap;
-  padding: 3rem 0;
+  padding: 3rem 0 7rem;
   gap: 5rem;
 }
 

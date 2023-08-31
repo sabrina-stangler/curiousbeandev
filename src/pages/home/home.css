@@ -34,18 +34,18 @@
 }
 
 .service-container {
-  padding: 2rem;
+  padding: 1rem 0.5rem;
   display: flex;
   flex-flow: row wrap;
   gap: 10vi;
   justify-content: space-evenly;
   align-items: center;
-  /* border: 5px dashed var(--tertiary);
-  border-radius: 1rem; */
+  border: 5px dashed var(--tertiary);
+  border-radius: 1rem;
 }
 
 .service-description {
-  max-width: 30vw;
+  max-width: max(250px, 30vw);
 }
 
 .service-image-pair {

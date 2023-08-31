@@ -6,8 +6,8 @@ const ds_bluelabel: Project = {
   title: 'DSSI',
   description: 'massive eCommerce product, core offering',
   bullets: [
-    'grew familiarity with massive ecosystem of data, applications, & security',
-    'learned to use a whole host of new tools like AWS console, etc. for dev ops work',
+    'deployed changes across massive ecosystem of data, applications, & security',
+    'learned to use a bunch of new tools for dev ops work (AWS console, etc.)',
     'performed maintenance patching tasks in AWS, wrote terraform'
   ],
   attrs: [ProjectAttr.fullstack, ProjectAttr.react]
@@ -49,8 +49,7 @@ const rc_quadjobs: Project = {
   title: 'job poster/finder',
   description: 'startup product building MVP v2',
   bullets: [
-    'implemented payments with Stripe',
-    'implemented in-app chat with Twilio Conversations',
+    'implemented two complete features with 3rd party integrations: Stripe & Twilio Conversations',
     'coordinated w/ 3rd party contractor building API',
   ],
   attrs: [ProjectAttr.frontend, ProjectAttr.react, ProjectAttr.ionic, ProjectAttr.mobile]
@@ -97,18 +96,24 @@ const rc: Organization = {
   description: 'Full-time, agency of 10 devs, working in small teams to bring product visions to life for startups & SMB’s building digital products for the first time',
   startDate: new Date('2021-07-19'),
   endDate: new Date('2022-12-31'),
-  projects: [rc_lmi, rc_website, rc_velocity, rc_quadjobs, rc_lpi]
+  projects: [
+    rc_lmi,
+    rc_website,
+    // rc_velocity,
+    rc_quadjobs,
+    // rc_lpi
+  ]
 }
 
 // MacGregor Partners --------------------------------------
 
 const mgp_tag: Project = {
-  title: 'inventory management',
-  description: 'new features & maintenance on core product offering',
+  title: 'MGP Tag',
+  description: 'new features & bug fixes',
   bullets: [
-    'mentored by immediate team of 5',
-    'mentored by full team of 12 including 3 architects',
-    'mentored by eng. manager & product manager including weekly meeting',
+    '2 year internship, working on Tag (core product offering)',
+    'learned a LOT about troubleshooting and thorough end-to-end testing',
+    'architected new inventory management system with team of 5',
   ],
   attrs: [ProjectAttr.fullstack, ProjectAttr.angular, ProjectAttr.mobile, ProjectAttr.product_management]
 }
@@ -170,7 +175,13 @@ const cb: Organization = {
   projects: [cb_placeholder]
 }
 
-const unsorted_orgs: Organization[] = [ds, rc, mgp, cv, cb]
+const unsorted_orgs: Organization[] = [
+  ds,
+  rc,
+  mgp,
+  cv,
+  // cb
+]
 const productExperience: Organization[] = unsorted_orgs.sort((a,b) => a.startDate.getTime() >= b.startDate.getTime() ? -1 : 1)
 
 export default productExperience

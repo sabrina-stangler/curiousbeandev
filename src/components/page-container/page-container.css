@@ -10,7 +10,7 @@
 
 .nav-links {
   display: flex;
-  flex-direction: row wrap;
+  flex-flow: row wrap;
   gap: .5rem;
   align-items: center;
   margin-bottom: 1rem;

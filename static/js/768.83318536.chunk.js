@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcuriousbeandev=self.webpackChunkcuriousbeandev||[]).push([[768],{768:function(e,s,u){e.exports=u.p+"static/media/redesign-v2.7bec26f8f2a2535a12fb.md"}}]);

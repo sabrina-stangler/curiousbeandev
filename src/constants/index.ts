@@ -1,4 +1,5 @@
 export * from './bio'
 export * from './blog-posts'
+export * from './design-portfolio'
 export * from './leadership-experience'
 export * from './product-experience'

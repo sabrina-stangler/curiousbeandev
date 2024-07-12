@@ -1,0 +1,12 @@
+.design-portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+.design-portfolio-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

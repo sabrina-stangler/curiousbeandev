@@ -34,7 +34,7 @@
 }
 
 .service-container {
-  padding: 1rem 0.5rem;
+  padding: 0 0.5rem 1rem 0.5rem;
   display: flex;
   flex-flow: row wrap;
   gap: 10vi;
@@ -58,4 +58,7 @@
 
 .home-service-image {
   /* height: 150px; */
+}
+
+.home-design-portfolio {
 }

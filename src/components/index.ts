@@ -1,3 +1,4 @@
+export * from './design-portfolio'
 export * from './experience'
 export * from './footer'
 export * from './headers'

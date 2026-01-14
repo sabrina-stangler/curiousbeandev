@@ -1,0 +1,20 @@
+@media screen and (min-width: 900px) {
+  .rl-section-container {
+    padding: 0 8rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .rl-section-container {
+    padding: 0 2rem;
+  }
+}
+
+.rl-logo {
+  margin: 0.5rem;
+  max-height: 150px;
+}
+
+.rl-image {
+  margin: 0.5rem;
+  max-height: 400px;
+}

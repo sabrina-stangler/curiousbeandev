@@ -1,33 +1,47 @@
-import {Helmet} from 'react-helmet'
-
-import './App.css';
-import { useCallback, useState } from 'react';
-import { ExperienceContext } from './contexts/useExperience';
-import { Routes, Route } from 'react-router-dom';
-import { About, BlogBrowse, BlogPage, Clients, Home, RadioMilwaukee } from './pages';
+import { useCallback, useState } from 'react'
+import { Helmet } from 'react-helmet'
+import { Route, Routes } from 'react-router-dom'
+import './App.css'
+import { ExperienceContext } from './contexts/useExperience'
+import {
+  About,
+  BlogBrowse,
+  BlogPage,
+  Clients,
+  Home,
+  RadioMilwaukee,
+  ReclaimLifestyles,
+} from './pages'
 
 function App() {
   const [showDetails, setShowDetails] = useState<boolean>(true)
 
   const toggleDetails = useCallback(() => {
-    setShowDetails(showDetails => !showDetails)
+    setShowDetails((showDetails) => !showDetails)
   }, [])
 
   return (
-    <ExperienceContext.Provider value={{showDetails, toggleDetails}} >
+    <ExperienceContext.Provider value={{ showDetails, toggleDetails }}>
       <Helmet>
-        <script src="https://kit.fontawesome.com/947016a734.js" crossOrigin="anonymous"></script>
+        <script
+          src='https://kit.fontawesome.com/947016a734.js'
+          crossOrigin='anonymous'
+        ></script>
       </Helmet>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<BlogBrowse />} />
-        <Route path="/blog/:fileName" element={<BlogPage />} />
-        <Route path="/clients" element={<Clients />} />
-        <Route path="/clients/radio-milwaukee" element={<RadioMilwaukee />} />
-        <Route path="/about" element={<About />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/blog' element={<BlogBrowse />} />
+        <Route path='/blog/:fileName' element={<BlogPage />} />
+        <Route path='/clients' element={<Clients />} />
+        <Route path='/clients/radio-milwaukee' element={<RadioMilwaukee />} />
+        <Route
+          path='/clients/reclaim-lifestyles'
+          element={<ReclaimLifestyles />}
+        />
+        <Route path='/about' element={<About />} />
       </Routes>
     </ExperienceContext.Provider>
-  );
+  )
 }
 
-export default App;
+export default App

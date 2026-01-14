@@ -1,4 +1,4 @@
-import { Organization, Project, ProjectAttr } from "../models"
+import { Organization, Project, ProjectAttr } from '../models'
 
 // Direct Supply -------------------------------------
 
@@ -8,9 +8,9 @@ const ds_bluelabel: Project = {
   bullets: [
     'deployed changes across massive ecosystem of data, applications, & security',
     'learned to use a bunch of new tools for dev ops work (AWS console, etc.)',
-    'performed maintenance patching tasks in AWS, wrote terraform'
+    'performed maintenance patching tasks in AWS, wrote terraform',
   ],
-  attrs: [ProjectAttr.fullstack, ProjectAttr.react]
+  attrs: [ProjectAttr.fullstack, ProjectAttr.react],
 }
 
 const ds_connect: Project = {
@@ -19,18 +19,19 @@ const ds_connect: Project = {
   bullets: [
     'ideated new solution to fit timeline of 6wks',
     'stood up new product end to end in team of 6',
-    'huge mentorship from my team in this role, I learned a LOT'
+    'huge mentorship from my team in this role, I learned a LOT',
   ],
-  attrs: [ProjectAttr.fullstack, ProjectAttr.react]
+  attrs: [ProjectAttr.fullstack, ProjectAttr.react],
 }
 
 const ds: Organization = {
   name: 'Direct Supply',
   titles: ['Software Engineer'],
-  description: 'Full-time, full stack development in team of 4-8 engineers + 1 business analyst + 1 product manager',
+  description:
+    'Full-time, full stack development in team of 4-8 engineers + 1 business analyst + 1 product manager',
   startDate: new Date('2020-06-05'),
   endDate: new Date('2021-07-15'),
-  projects: [ds_bluelabel, ds_connect]
+  projects: [ds_bluelabel, ds_connect],
 }
 
 // RokkinCat --------------------------------------
@@ -40,9 +41,9 @@ const rc_velocity: Project = {
   description: 'startup product in feature churn',
   bullets: [
     'integrated radio station controlled by coach, available to up to 50 participants',
-    'learned elixir in order to make backend changes'
+    'learned elixir in order to make backend changes',
   ],
-  attrs: [ProjectAttr.frontend, ProjectAttr.react, ProjectAttr.ionic]
+  attrs: [ProjectAttr.frontend, ProjectAttr.react, ProjectAttr.ionic],
 }
 
 const rc_quadjobs: Project = {
@@ -52,7 +53,12 @@ const rc_quadjobs: Project = {
     'implemented two complete features with 3rd party integrations: Stripe & Twilio Conversations',
     'coordinated w/ 3rd party contractor building API',
   ],
-  attrs: [ProjectAttr.frontend, ProjectAttr.react, ProjectAttr.ionic, ProjectAttr.mobile]
+  attrs: [
+    ProjectAttr.frontend,
+    ProjectAttr.react,
+    ProjectAttr.ionic,
+    ProjectAttr.mobile,
+  ],
 }
 
 const rc_lmi: Project = {
@@ -65,7 +71,15 @@ const rc_lmi: Project = {
     'our client launched with customers on Dec 23 with NO issues (cue shock)',
     'finally felt like I had a grip on elixir after this project',
   ],
-  attrs: [ProjectAttr.frontend, ProjectAttr.backend, ProjectAttr.react, ProjectAttr.ionic, ProjectAttr.mobile, ProjectAttr.team_lead, ProjectAttr.product_management]
+  attrs: [
+    ProjectAttr.frontend,
+    ProjectAttr.backend,
+    ProjectAttr.react,
+    ProjectAttr.ionic,
+    ProjectAttr.mobile,
+    ProjectAttr.team_lead,
+    ProjectAttr.product_management,
+  ],
 }
 
 const rc_lpi: Project = {
@@ -75,7 +89,13 @@ const rc_lpi: Project = {
     'reproducing & fixing user reported bugs',
     'balanced time input vs impact output to stay under monthly maintenance budget',
   ],
-  attrs: [ProjectAttr.frontend, ProjectAttr.backend, ProjectAttr.angular, ProjectAttr.ionic, ProjectAttr.mobile]
+  attrs: [
+    ProjectAttr.frontend,
+    ProjectAttr.backend,
+    ProjectAttr.angular,
+    ProjectAttr.ionic,
+    ProjectAttr.mobile,
+  ],
 }
 
 const rc_website: Project = {
@@ -87,22 +107,20 @@ const rc_website: Project = {
     'led one incredible(!) developer and one talented(!!) designer',
   ],
   attrs: [ProjectAttr.react, ProjectAttr.product_management],
-  links: [{ label: 'erin heinz', href: 'https://erinheinz.com'}, { label: 'lyzzi brooks', href: 'https://dribbble.com/lyzzi'}]
+  links: [
+    { label: 'erin heinz', href: 'https://erinheinz.com' },
+    { label: 'lyzzi brooks', href: 'https://dribbble.com/lyzzi' },
+  ],
 }
 
 const rc: Organization = {
   name: 'RokkinCat LLC',
   titles: ['Senior Frontend Software Engineer', 'Tech Lead'],
-  description: 'Full-time, agency of 10 devs, working in small teams to bring product visions to life for startups & SMB’s building digital products for the first time',
+  description:
+    'Full-time, agency of 10 devs, working in small teams to bring product visions to life for startups & SMB’s building digital products for the first time',
   startDate: new Date('2021-07-19'),
   endDate: new Date('2022-12-31'),
-  projects: [
-    rc_lmi,
-    rc_website,
-    // rc_velocity,
-    rc_quadjobs,
-    // rc_lpi
-  ]
+  projects: [rc_lmi, rc_website, rc_velocity, rc_quadjobs, rc_lpi],
 }
 
 // MacGregor Partners --------------------------------------
@@ -115,7 +133,12 @@ const mgp_tag: Project = {
     'learned a LOT about troubleshooting and thorough end-to-end testing',
     'architected new inventory management system with team of 5',
   ],
-  attrs: [ProjectAttr.fullstack, ProjectAttr.angular, ProjectAttr.mobile, ProjectAttr.product_management]
+  attrs: [
+    ProjectAttr.fullstack,
+    ProjectAttr.angular,
+    ProjectAttr.mobile,
+    ProjectAttr.product_management,
+  ],
 }
 
 const mgp: Organization = {
@@ -124,7 +147,7 @@ const mgp: Organization = {
   description: 'Year round internship at local startup->SMB',
   startDate: new Date('2018-06-01'),
   endDate: new Date('2020-03-18'),
-  projects: [mgp_tag]
+  projects: [mgp_tag],
 }
 
 // Cyberpunk Ventures --------------------------------------
@@ -138,11 +161,17 @@ const cv_tipascrxipt: Project = {
   ],
   attrs: [ProjectAttr.product_management, ProjectAttr.design],
   links: [
-    { label: 'pitch deck', href: 'https://drive.google.com/file/d/1PgbiZwU46LEYmUfYprW7vM-bv9t1PXAa/view?usp=sharing'},
-    { label: 'sam aten', href: 'https://www.linkedin.com/in/samuelaten/'},
-    { label: 'michael kirsanov', href: 'https://www.linkedin.com/in/michaelkirsanov/'},
-    { label: 'tipascrxipt', href: 'https://tipascrxipt.com/'},
-  ]
+    {
+      label: 'pitch deck',
+      href: 'https://drive.google.com/file/d/1PgbiZwU46LEYmUfYprW7vM-bv9t1PXAa/view?usp=sharing',
+    },
+    { label: 'sam aten', href: 'https://www.linkedin.com/in/samuelaten/' },
+    {
+      label: 'michael kirsanov',
+      href: 'https://www.linkedin.com/in/michaelkirsanov/',
+    },
+    { label: 'tipascrxipt', href: 'https://tipascrxipt.com/' },
+  ],
 }
 
 const cv: Organization = {
@@ -151,20 +180,70 @@ const cv: Organization = {
   description: 'Group startup & product consulting business',
   startDate: new Date('2019-06-01'),
   endDate: new Date('2020-08-01'),
-  projects: [cv_tipascrxipt]
+  projects: [cv_tipascrxipt],
 }
 
 // Curious Bean --------------------------------------
 
 const cb_placeholder: Project = {
   title: 'Hire me',
-  description: 'Currently seeking clients for 2023',
+  description: 'Currently seeking clients for 2026',
   bullets: [
     'bringing product visions to life',
     'hybrid mobile development (with Ionic)',
-    'web development in react or angular'
+    'web development in react',
   ],
-  attrs: [ProjectAttr.fullstack, ProjectAttr.react, ProjectAttr.angular, ProjectAttr.mobile, ProjectAttr.product_management, ProjectAttr.ionic]
+  attrs: [
+    ProjectAttr.fullstack,
+    ProjectAttr.react,
+    ProjectAttr.mobile,
+    ProjectAttr.product_management,
+    ProjectAttr.ionic,
+  ],
+}
+
+const cb_reclaim: Project = {
+  title: 'Reclaim Lifestyles',
+  description: 'health & fitness startup product',
+  bullets: [
+    'built MVP of hybrid mobile app using Ionic Capacitor & React',
+    'designed UI/UX for app in Figma, iterated based on user feedback',
+    'managed product roadmap, backlog, and launch timeline alongside founder',
+  ],
+  attrs: [
+    ProjectAttr.frontend,
+    ProjectAttr.react,
+    ProjectAttr.ionic,
+    ProjectAttr.mobile,
+    ProjectAttr.product_management,
+    ProjectAttr.design,
+  ],
+  links: [
+    {
+      label: 'app store',
+      href: 'https://apps.apple.com/us/app/restart-by-reclaim-lifestyles/id6476577899',
+    },
+    {
+      label: 'play store',
+      href: 'https://play.google.com/store/apps/details?id=com.reclaimlifestyles.restart&hl=en_US',
+    },
+  ],
+}
+
+const cb_codialgerhomes: Project = {
+  title: 'codialgerhomes.com',
+  description: 'realtor static website',
+  bullets: [
+    'developed static website for local realtor using React',
+    'designed logo in figma',
+  ],
+  attrs: [ProjectAttr.frontend, ProjectAttr.react, ProjectAttr.design],
+  links: [
+    {
+      label: 'codialgerhomes.com',
+      href: 'https://codialgerhomes.com',
+    },
+  ],
 }
 
 const cb: Organization = {
@@ -172,16 +251,12 @@ const cb: Organization = {
   titles: ['Software Engineer', 'Technical Product Manager'],
   description: 'Self-employed consulting business',
   startDate: new Date('2023-01-01'),
-  projects: [cb_placeholder]
+  projects: [cb_placeholder, cb_reclaim, cb_codialgerhomes],
 }
 
-const unsorted_orgs: Organization[] = [
-  ds,
-  rc,
-  mgp,
-  cv,
-  // cb
-]
-const productExperience: Organization[] = unsorted_orgs.sort((a,b) => a.startDate.getTime() >= b.startDate.getTime() ? -1 : 1)
+const unsorted_orgs: Organization[] = [ds, rc, mgp, cv, cb]
+const productExperience: Organization[] = unsorted_orgs.sort((a, b) =>
+  a.startDate.getTime() >= b.startDate.getTime() ? -1 : 1
+)
 
 export default productExperience

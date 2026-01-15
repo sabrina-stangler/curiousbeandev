@@ -1,4 +1,4 @@
-import { Experience, PageContainer, Profile, Title } from '../../components';
+import { PageContainer, Profile, Title } from '../../components';
 import './about.css';
 
 export function About() {
@@ -8,7 +8,6 @@ export function About() {
       <Title>About</Title>
       <div className="about-container">
         <Profile />
-        <Experience />
       </div>
     </PageContainer>
   )

@@ -21,46 +21,7 @@
   }
 }
 
-.block {
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-size: larger;
-  background-color: var(--medium);
-  height: fit-content;
-  padding: 1rem;
-  border-radius: 1rem;
-}
-
-.service-container {
-  padding: 0 0.5rem 1rem 0.5rem;
-  display: flex;
-  flex-flow: row wrap;
-  gap: 10vi;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 5px dashed var(--tertiary);
-  border-radius: 1rem;
-}
-
-.service-description {
-  max-width: max(250px, 30vw);
-}
-
-.service-image-pair {
-  display: flex;
-  gap: 1rem;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-service-image {
-  /* height: 150px; */
-}
-
-.home-design-portfolio {
+.home-experience {
 }
 
 /* Services word cloud styles */

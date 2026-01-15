@@ -1,5 +1,6 @@
 import {
   DesignPortfolio,
+  Experience,
   HeaderOne,
   PageContainer,
   Title,
@@ -57,8 +58,8 @@ export function Home() {
             </span>
           ))}
         </div>
-        <div className='home-design-portfolio'>
-          <DesignPortfolio />
+        <div className='home-experience'>
+          <Experience />
         </div>
       </div>
     </PageContainer>

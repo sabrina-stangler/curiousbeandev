@@ -11,7 +11,7 @@
   display: flex;
   flex-flow: column nowrap;
   padding: 3rem 0 7rem;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 @media screen and (min-width: 1800px) {
@@ -61,4 +61,176 @@
 }
 
 .home-design-portfolio {
+}
+
+/* Services word cloud styles */
+.services-cloud {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.service-word {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 250ms ease, box-shadow 250ms ease, z-index 0s;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+  font-family: 'Unbounded';
+}
+
+.service-word:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  z-index: 10;
+}
+
+.service-free {
+  font-weight: 800;
+  border: 3px solid rgba(0,0,0,0.15) !important;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2) !important;
+}
+
+/* Size classes determine circle dimensions */
+.size-1 { 
+  width: 110px; 
+  height: 110px; 
+  font-size: 0.85rem; 
+  font-weight: 600;
+  top: 48%; 
+  left: 18%;
+}
+.size-2 { 
+  width: 140px; 
+  height: 140px; 
+  font-size: 0.95rem; 
+  font-weight: 700;
+  top: 15%; 
+  left: 32%;
+}
+.size-3 { 
+  width: 130px; 
+  height: 130px; 
+  font-size: 0.9rem; 
+  font-weight: 700;
+  top: 52%; 
+  left: 58%;
+}
+.size-4 { 
+  width: 165px; 
+  height: 165px; 
+  font-size: 1.05rem; 
+  font-weight: 800;
+  top: 22%; 
+  left: 55%;
+}
+.size-5 { 
+  width: 150px; 
+  height: 150px; 
+  font-size: 1rem; 
+  font-weight: 800;
+  top: 8%; 
+  left: 68%;
+}
+
+/* Extra positioning for 6th and 7th items */
+.service-word:nth-child(6) {
+  width: 125px;
+  height: 125px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  top: 40%;
+  left: 42%;
+}
+
+.service-word:nth-child(7) {
+  width: 135px;
+  height: 135px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  top: 65%;
+  left: 35%;
+}
+
+@media screen and (max-width: 900px) {
+  .services-cloud {
+    min-height: 650px;
+    padding: 2rem;
+  }
+  .size-1 { 
+    width: 90px; 
+    height: 90px; 
+    font-size: 0.72rem;
+    top: 5%;
+    left: 8%;
+  }
+  .size-2 { 
+    width: 110px; 
+    height: 110px; 
+    font-size: 0.8rem;
+    top: 5%;
+    left: 58%;
+  }
+  .size-3 { 
+    width: 100px; 
+    height: 100px; 
+    font-size: 0.75rem;
+    top: 30%;
+    left: 12%;
+  }
+  .size-4 { 
+    width: 125px; 
+    height: 125px; 
+    font-size: 0.85rem;
+    top: 30%;
+    left: 60%;
+  }
+  .size-5 { 
+    width: 115px; 
+    height: 115px; 
+    font-size: 0.82rem;
+    top: 56%;
+    left: 5%;
+  }
+  .service-word:nth-child(6) { 
+    width: 98px; 
+    height: 98px; 
+    font-size: 0.74rem;
+    top: 56%;
+    left: 62%;
+  }
+  .service-word:nth-child(7) { 
+    width: 105px; 
+    height: 105px; 
+    font-size: 0.78rem;
+    top: 80%;
+    left: 35%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .service-word {
+    animation: float 7s ease-in-out infinite;
+  }
+  .service-word:nth-child(2n) { animation-duration: 6s; animation-delay: -1s; }
+  .service-word:nth-child(3n) { animation-duration: 8s; animation-delay: -2s; }
+  .service-word:nth-child(4n) { animation-duration: 7.5s; animation-delay: -0.5s; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(3px, -6px) rotate(1deg); }
+  50% { transform: translate(-2px, -4px) rotate(-1deg); }
+  75% { transform: translate(4px, -8px) rotate(0.5deg); }
 }

@@ -1,9 +1,8 @@
 import {
-  DesignPortfolio,
   Experience,
   HeaderOne,
   PageContainer,
-  Title,
+  Title
 } from '../../components'
 import { CB_TAGLINE } from '../../constants'
 

@@ -1,5 +1,9 @@
 .clients-container {
+  margin-top: 2rem;
   padding: 1rem 0;
-  text-align: left;
-  min-height: 70vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }

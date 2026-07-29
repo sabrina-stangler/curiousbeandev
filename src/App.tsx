@@ -11,6 +11,9 @@ import {
   Home,
   RadioMilwaukee,
   ReclaimLifestyles,
+  GiddyApp,
+  EmmittJames,
+  FairyAstronaut,
 } from './pages'
 
 function App() {
@@ -38,6 +41,9 @@ function App() {
           path='/clients/reclaim-lifestyles'
           element={<ReclaimLifestyles />}
         />
+        <Route path='/clients/giddy-app' element={<GiddyApp />} />
+        <Route path='/clients/emmitt-james' element={<EmmittJames />} />
+        <Route path='/clients/fairy-astronaut' element={<FairyAstronaut />} />
         <Route path='/about' element={<About />} />
       </Routes>
     </ExperienceContext.Provider>

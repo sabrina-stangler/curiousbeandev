@@ -1,0 +1,10 @@
+@media screen and (min-width: 900px) {
+  .fa-section-container {
+    padding: 0 8rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .fa-section-container {
+    padding: 0 2rem;
+  }
+}

@@ -1,3 +1,6 @@
+export * from './EmmittJames'
+export * from './FairyAstronaut'
+export * from './GiddyApp'
 export * from './RadioMilwaukee'
 export * from './ReclaimLifestyles'
 export * from './clients'

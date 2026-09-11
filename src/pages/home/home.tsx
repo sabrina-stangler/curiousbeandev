@@ -1,9 +1,4 @@
-import {
-  Experience,
-  HeaderOne,
-  PageContainer,
-  Title
-} from '../../components'
+import { Experience, HeaderOne, PageContainer, Title } from '../../components'
 import { CB_TAGLINE } from '../../constants'
 
 import './home.css'

@@ -18,10 +18,18 @@ export enum ProjectAttr {
   elected = 'elected',
   volunteer = 'volunteer',
   promotion = 'promotion',
+  // Speaking
+  outreach = 'girls in stem',
+  career = 'career',
+  keynote = 'keynote',
+  lightning = 'lightning',
+  panelist = 'panelist',
+  emcee = 'emcee / host',
+  moderator = 'moderator',
 }
 
 export interface ProjectLink {
-  label: string;
+  label: string
   href: string
 }
 
@@ -34,10 +42,10 @@ export interface Project {
 }
 
 export interface Organization {
-  name: string;
-  titles?: string[];
-  description: string;
-  startDate: Date;
-  endDate?: Date;
-  projects: Project[];
+  name: string
+  titles?: string[]
+  description: string
+  startDate?: Date
+  endDate?: Date
+  projects: Project[]
 }

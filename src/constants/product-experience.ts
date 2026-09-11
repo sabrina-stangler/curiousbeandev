@@ -256,7 +256,7 @@ const cb: Organization = {
 
 const unsorted_orgs: Organization[] = [ds, rc, mgp, cv, cb]
 const productExperience: Organization[] = unsorted_orgs.sort((a, b) =>
-  a.startDate.getTime() >= b.startDate.getTime() ? -1 : 1
+  (a.startDate?.getTime() ?? 0) >= (b.startDate?.getTime() ?? 0) ? -1 : 1,
 )
 
-export default productExperience
+export { productExperience }

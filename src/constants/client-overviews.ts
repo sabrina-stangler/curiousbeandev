@@ -1,9 +1,10 @@
-import { ClientOverview } from '../models'
+import CAHLogo from '../assets/images/cah-logo.png'
+import FPGDotCom from '../assets/images/ej-fpgdotcom.png'
+import GiddyAppLogo from '../assets/images/giddyapp.webp'
 import RadioMilwaukeeLogo from '../assets/images/radio-milwaukee.jpg'
 import ReclaimLifestylesAppIcon from '../assets/images/reclaim-lifestyles/restart-app-icon.png'
-import CAHLogo from '../assets/images/cah-logo.png'
-import GiddyAppLogo from '../assets/images/giddyapp.webp'
-import FPGDotCom from '../assets/images/ej-fpgdotcom.png'
+import UncleBucksOnThirdLogo from '../assets/images/ub-logo.png'
+import { ClientOverview } from '../models'
 
 export const clientOverviews: ClientOverview[] = [
   {
@@ -47,5 +48,12 @@ export const clientOverviews: ClientOverview[] = [
     description: 'Website Buildout',
     imageUrl: '',
     slug: 'fairy-astronaut',
+  },
+  {
+    name: "Uncle Buck's on Third",
+    work: 'unclebucksonthird.com',
+    description: 'Website Design & Buildout',
+    imageUrl: UncleBucksOnThirdLogo,
+    slug: 'uncle-bucks-on-third',
   },
 ]

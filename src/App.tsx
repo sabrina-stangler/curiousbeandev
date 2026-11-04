@@ -8,12 +8,13 @@ import {
   BlogBrowse,
   BlogPage,
   Clients,
+  EmmittJames,
+  FairyAstronaut,
+  GiddyApp,
   Home,
   RadioMilwaukee,
   ReclaimLifestyles,
-  GiddyApp,
-  EmmittJames,
-  FairyAstronaut,
+  UncleBucks,
 } from './pages'
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path='/clients/giddy-app' element={<GiddyApp />} />
         <Route path='/clients/emmitt-james' element={<EmmittJames />} />
         <Route path='/clients/fairy-astronaut' element={<FairyAstronaut />} />
+        <Route path='/clients/uncle-bucks-on-third' element={<UncleBucks />} />
         <Route path='/about' element={<About />} />
       </Routes>
     </ExperienceContext.Provider>
